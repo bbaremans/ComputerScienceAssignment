@@ -269,15 +269,15 @@ def start_min_hashing(binary_matrix, N):
     rows, columns = np.shape(binary_matrix)
 
     # hash value for each row and each hash function
-    hash_values = np.zeros((N, columns), dtype=int)
+    hash_values = np.zeros((N, rows), dtype=int)
 
-    for column in range(columns):
+    for row in range(rows):
         # load the values of the variables needed for the hash functions; the lists for a and b
         a_values, b_values = hash_ab(N)
         for index in range(len(a_values)):
             hash_outcome = hash_functions(a_values[index], b_values[index], N + 1)
             # Save the hash values
-            hash_values[index, column] = hash_outcome
+            hash_values[index, row] = hash_outcome
 
     return hash_values
 
