@@ -94,7 +94,7 @@ for _ in range(NUMBER_OF_BOOTSTRAPS):
     print(result_per_bootstrap)
 
 result_all_bootstraps = result_all_bootstraps / NUMBER_OF_BOOTSTRAPS
-result_all_bootstraps.to_csv('CSOutput_fractions.csv', index=True)
+result_all_bootstraps.to_csv('CSOutput.csv', index=True)
 
 # Record the end time
 end_time = time.time()
