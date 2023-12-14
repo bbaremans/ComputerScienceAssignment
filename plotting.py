@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 current_directory = os.getcwd()
-json_path = '\\CSOutput_fractions.csv'
+json_path = '\\CSOutput.csv'
 path = Path(current_directory + json_path)
 csv = pd.read_csv(path, sep=',|;', engine='python', index_col=0)
 
