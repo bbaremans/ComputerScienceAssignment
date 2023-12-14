@@ -7,7 +7,6 @@ from Functions import create_equalized_dataframe, compare_kpv, get_f1_score, sep
     similarity_matrices, bands_rows, threshold, real_duplicates, create_bin_vector, start_min_hashing, \
     signature_matrix, start_lsh, split_raw_data
 import time
-import matplotlib.pyplot as plt
 
 # Record the start time
 start_time = time.time()
